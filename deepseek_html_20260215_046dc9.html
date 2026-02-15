@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+  <title>EDUVA MENTOR Academy | Lohardaga</title>
+  <!-- SEO meta -->
+  <meta name="description" content="EDUVA MENTOR Academy Lohardaga: concept clear • result sure. Coaching for class 6 to 10 (CBSE/JAC/ICSE) & competition batches. Small batches, regular tests.">
+  <meta name="keywords" content="coaching institute in Lohardaga, EDUVA MENTOR, Gumla Road, tuition classes, SSC, JSSC, NEEV, LAKSHYA batch">
+  <!-- Font & Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Google Fonts (clean, modern) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    :root {
+      --deep-blue: #0a2c4b;        /* dark blue like school branding */
+      --golden-yellow: #f4b836;     /* warm yellow */
+      --pure-white: #ffffff;
+      --light-bg: #f9fafc;
+      --gray-text: #2e3b4e;
+      --soft-shadow: 0 12px 28px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.03);
+    }
+
+    body {
+      background-color: var(--pure-white);
+      color: var(--gray-text);
+      line-height: 1.5;
+    }
+
+    h1, h2, h3 {
+      font-weight: 700;
+      color: var(--deep-blue);
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      position: relative;
+      display: inline-block;
+    }
+    h2:after {
+      content: '';
+      display: block;
+      width: 70px;
+      height: 4px;
+      background: var(--golden-yellow);
+      margin-top: 8px;
+      border-radius: 4px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1280px;
+      margin: 0 auto;
+    }
+
+    /* Buttons – large, bold CTA */
+    .btn {
+      display: inline-block;
+      background-color: var(--deep-blue);
+      color: white;
+      font-weight: 600;
+      padding: 14px 28px;
+      border-radius: 60px;
+      text-decoration: none;
+      font-size: 1.1rem;
+      border: 2px solid transparent;
+      transition: 0.25s ease;
+      box-shadow: 0 8px 16px rgba(10,44,75,0.15);
+      letter-spacing: 0.3px;
+    }
+    .btn-yellow {
+      background-color: var(--golden-yellow);
+      color: var(--deep-blue);
+      border: 2px solid var(--golden-yellow);
+    }
+    .btn-yellow:hover {
+      background-color: #e0a62b;
+      border-color: #e0a62b;
+    }
+    .btn-outline {
+      background: transparent;
+      color: var(--deep-blue);
+      border: 2px solid var(--deep-blue);
+      box-shadow: none;
+    }
+    .btn-outline:hover {
+      background: var(--deep-blue);
+      color: white;
+    }
+    .btn i {
+      margin-right: 8px;
+    }
+
+    /* floating action buttons (mobile friendly) */
+    .float-wa {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      background-color: #25D366;
+      color: white;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 32px;
+      box-shadow: 0 8px 20px rgba(37,211,102,0.3);
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.2s;
+    }
+    .float-call {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--deep-blue);
+      color: white;
+      width: 62px;
+      height: 62px;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 28px;
+      box-shadow: 0 8px 16px rgba(10,44,75,0.4);
+      z-index: 99;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .float-wa i, .float-call i {
+      margin-right: 0;
+    }
+
+    /* header / navigation (clean) */
+    .navbar {
+      background: var(--pure-white);
+      padding: 12px 0;
+      box-shadow: 0 2px 15px rgba(0,0,0,0.02);
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo h3 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: var(--deep-blue);
+    }
+    .logo span {
+      color: var(--golden-yellow);
+      font-weight: 700;
+    }
+
+    /* hero */
+    .hero {
+      background: linear-gradient(98deg, #f0f5fd 0%, #e9eff9 100%);
+      padding: 40px 0 60px;
+    }
+    .hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 40px;
+    }
+    .hero-content {
+      flex: 1 1 400px;
+    }
+    .hero h1 {
+      font-size: 3.2rem;
+      line-height: 1.2;
+      color: var(--deep-blue);
+    }
+    .hero-tagline {
+      font-size: 2rem;
+      font-weight: 600;
+      color: var(--golden-yellow);
+      margin: 12px 0 8px;
+    }
+    .hero-sub {
+      font-size: 1.4rem;
+      font-weight: 500;
+      margin-bottom: 25px;
+    }
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin: 30px 0 15px;
+    }
+    .hero-image {
+      flex: 1 1 300px;
+      background: url('https://images.pexels.com/photos/207691/pexels-photo-207691.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2') center/cover;
+      min-height: 300px;
+      border-radius: 28px;
+      box-shadow: var(--soft-shadow);
+      border: 5px solid white;
+    }
+    /* fallback background if image not loaded – modern classroom style */
+    .hero-image {
+      background-color: #b3d0f0;
+      background-blend-mode: overlay;
+    }
+
+    /* sections */
+    section {
+      padding: 70px 0;
+    }
+    .bg-light {
+      background-color: var(--light-bg);
+    }
+
+    .about-text p {
+      font-size: 1.2rem;
+      max-width: 800px;
+    }
+
+    .course-grid, .feature-grid, .review-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 30px;
+      margin-top: 20px;
+    }
+    .course-card {
+      background: white;
+      border-radius: 28px;
+      padding: 28px 20px;
+      box-shadow: var(--soft-shadow);
+      border-bottom: 5px solid var(--golden-yellow);
+      transition: transform 0.15s;
+    }
+    .course-card h3 {
+      font-size: 1.8rem;
+      margin-bottom: 5px;
+      color: var(--deep-blue);
+    }
+    .course-card .sub {
+      font-weight: 600;
+      color: var(--golden-yellow);
+      letter-spacing: 0.5px;
+      margin-bottom: 15px;
+    }
+    .course-card ul {
+      list-style: none;
+    }
+    .course-card li {
+      padding: 6px 0;
+      font-weight: 500;
+    }
+    .course-card i {
+      color: var(--golden-yellow);
+      width: 24px;
+    }
+
+    .feature-card {
+      background: white;
+      border-radius: 24px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: var(--soft-shadow);
+    }
+    .feature-card i {
+      font-size: 2.8rem;
+      color: var(--deep-blue);
+      background: rgba(244,184,54,0.15);
+      padding: 20px;
+      border-radius: 60px;
+      margin-bottom: 20px;
+    }
+    .feature-card h4 {
+      font-size: 1.5rem;
+      margin-bottom: 8px;
+    }
+
+    /* results / gallery mixed as gallery + toppers */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 24px;
+    }
+    .gallery-item {
+      background: #d9e2ef;
+      border-radius: 24px;
+      height: 200px;
+      box-shadow: var(--soft-shadow);
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      border: 3px solid white;
+    }
+    .gallery-item .caption {
+      background: var(--deep-blue);
+      color: white;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      padding: 10px;
+      border-radius: 0 0 24px 24px;
+      font-weight: 500;
+      text-align: center;
+    }
+
+    .review-card {
+      background: white;
+      border-radius: 30px;
+      padding: 30px;
+      box-shadow: var(--soft-shadow);
+    }
+    .review-card i.fa-quote-left {
+      color: var(--golden-yellow);
+      font-size: 2rem;
+      opacity: 0.5;
+      margin-bottom: 12px;
+    }
+    .review-card h4 {
+      font-weight: 700;
+      margin-top: 20px;
+    }
+
+    /* contact & form */
+    .contact-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .contact-info, .contact-form {
+      flex: 1 1 300px;
+      background: white;
+      padding: 36px 28px;
+      border-radius: 36px;
+      box-shadow: var(--soft-shadow);
+    }
+    .contact-info i {
+      color: var(--golden-yellow);
+      margin-right: 12px;
+      width: 24px;
+    }
+    .info-line {
+      display: flex;
+      align-items: center;
+      margin: 20px 0;
+      font-size: 1.2rem;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    input, select {
+      width: 100%;
+      padding: 16px 22px;
+      border: 1px solid #ddd;
+      border-radius: 50px;
+      font-size: 1rem;
+      background: #f5f7fb;
+    }
+    .map-section {
+      background: #e4ecf7;
+      padding: 40px 0;
+    }
+    .map-container {
+      border-radius: 40px;
+      overflow: hidden;
+      height: 320px;
+      border: 5px solid white;
+    }
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+    .map-buttons {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin: 30px 0 10px;
+    }
+
+    footer {
+      background: var(--deep-blue);
+      color: white;
+      padding: 30px 0;
+      text-align: center;
+    }
+
+    /* mobile optimization */
+    @media (max-width: 700px) {
+      h1 { font-size: 2.4rem; }
+      .hero-tagline { font-size: 1.6rem; }
+      .hero-buttons .btn { width: 100%; text-align: center; }
+      .hero-image { min-height: 220px; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- floating action buttons -->
+<a href="https://wa.me/919153784965?text=Hello%20EDUVA%20MENTOR%2C%20interested%20in%20admission" class="float-wa" target="_blank"><i class="fab fa-whatsapp"></i></a>
+<a href="tel:9153784965" class="float-call"><i class="fas fa-phone-alt"></i></a>
+
+<!-- Navigation -->
+<div class="navbar">
+  <div class="container nav-container">
+    <div class="logo"><h3>EDUVA <span>MENTOR</span></h3></div>
+    <div style="font-weight:600;">Lohardaga</div>
+  </div>
+</div>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-content">
+      <h1>EDUVA MENTOR Academy</h1>
+      <div class="hero-tagline">Concept Clear • Result Sure</div>
+      <div class="hero-sub">Classes 6 to 10 (CBSE + JAC + ICSE Board)</div>
+      <div class="hero-buttons">
+        <a href="tel:9153784965" class="btn"><i class="fas fa-phone-alt"></i> Call Now</a>
+        <a href="https://wa.me/919153784965" class="btn btn-yellow" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        <a href="https://maps.google.com/?q=Near+Ajay+Udyan+Park,+Gumla+Road,+Lohardaga+Jharkhand" class="btn btn-outline" target="_blank"><i class="fas fa-map-marker-alt"></i> Directions</a>
+        <a href="#contact" class="btn btn-yellow"><i class="fas fa-graduation-cap"></i> Free Demo</a>
+      </div>
+    </div>
+    <div class="hero-image" title="classroom ambiance"></div>
+  </div>
+</section>
+
+<!-- About Section -->
+<section class="container">
+  <h2>About Us</h2>
+  <div class="about-text">
+    <p>At EDUVA MENTOR Academy, we believe in concept clarity over mugging up. Small batch sizes (max 15 students) ensure personal attention. Regular doubt solving and weekly tests keep students on track. We prepare students for school exams as well as competitions.</p>
+  </div>
+</section>
+
+<!-- Courses Section -->
+<section class="bg-light">
+  <div class="container">
+    <h2>Our Courses</h2>
+    <div class="course-grid">
+      <div class="course-card">
+        <h3>NEEV FOUNDATION</h3>
+        <div class="sub">Class 6,7,8,9,10</div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> Maths</li>
+          <li><i class="fas fa-check-circle"></i> Science</li>
+          <li><i class="fas fa-check-circle"></i> English</li>
+          <li><i class="fas fa-check-circle"></i> Social Science</li>
+        </ul>
+      </div>
+      <div class="course-card">
+        <h3>LAKSHYA COMPETITION</h3>
+        <div class="sub">SSC, JSSC, Railway, Defence, CTET, JTET</div>
+        <ul>
+          <li><i class="fas fa-check-circle"></i> General Studies</li>
+          <li><i class="fas fa-check-circle"></i> Reasoning & Maths</li>
+          <li><i class="fas fa-check-circle"></i> Science & GK</li>
+          <li><i class="fas fa-check-circle"></i> Previous year papers</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="container">
+  <h2>Why EDUVA MENTOR</h2>
+  <div class="feature-grid">
+    <div class="feature-card"><i class="fas fa-users"></i><h4>Small batch size</h4><p>Individual care</p></div>
+    <div class="feature-card"><i class="fas fa-calendar-check"></i><h4>Weekly tests</h4><p>Regular assessment</p></div>
+    <div class="feature-card"><i class="fas fa-chart-line"></i><h4>Performance report</h4><p>Track progress</p></div>
+    <div class="feature-card"><i class="fas fa-user-graduate"></i><h4>Personal attention</h4><p>Mentor connects</p></div>
+    <div class="feature-card"><i class="fas fa-question-circle"></i><h4>Doubt sessions</h4><p>Instant clarity</p></div>
+    <div class="feature-card"><i class="fas fa-book-open"></i><h4>Library facility</h4><p>Reference & study</p></div>
+  </div>
+</section>
+
+<!-- Results / Achievements & Gallery combined -->
+<section class="bg-light">
+  <div class="container">
+    <h2>Toppers & Success</h2>
+    <div class="gallery-grid" style="margin-bottom:40px;">
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/3762800/pexels-photo-3762800.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Riya Sharma (97% Class 10)</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Aryan Singh (JTET selected)</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/3768916/pexels-photo-3768916.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Priya Kumari (SSC CHSL)</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/4143800/pexels-photo-4143800.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Kunal Raj (Class 9 topper)</span></div>
+    </div>
+    <!-- Gallery section (classroom) -->
+    <h2>Gallery</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/256417/pexels-photo-256417.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Smart classroom</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/159844/cellular-education-classroom-159844.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Students practicing</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/5905709/pexels-photo-5905709.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Doubt clearing</span></div>
+      <div class="gallery-item" style="background-image: url('https://images.pexels.com/photos/3769982/pexels-photo-3769982.jpeg?auto=compress&cs=tinysrgb&w=600');"><span class="caption">Library session</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- Reviews Section -->
+<section class="container">
+  <h2>What Parents & Students Say</h2>
+  <div class="review-grid">
+    <div class="review-card"><i class="fas fa-quote-left"></i><p>My daughter's concept in science improved dramatically. Teachers are very supportive.</p><h4>- Manoj Singh (parent)</h4></div>
+    <div class="review-card"><i class="fas fa-quote-left"></i><p>Regular tests helped me stay confident. I love the library facility.</p><h4>- Sneha Kumari (class 10)</h4></div>
+    <div class="review-card"><i class="fas fa-quote-left"></i><p>EDUVA MENTOR made competitive exam preparation easy. Selected in JTET.</p><h4>- Rajesh Oraon</h4></div>
+  </div>
+</section>
+
+<!-- Contact Section + Form -->
+<section id="contact" class="bg-light">
+  <div class="container">
+    <h2>Contact & Enquiry</h2>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <div class="info-line"><i class="fas fa-phone-alt"></i> 9153784965 / 9153784398</div>
+        <div class="info-line"><i class="fas fa-map-marker-alt"></i> Near Ajay Udyan Park, Gumla Road, Lohardaga (Jharkhand)</div>
+        <div class="info-line"><i class="fas fa-clock"></i> Mon-Sat: 8am – 7pm</div>
+        <div style="margin-top: 30px;">
+          <a href="https://wa.me/919153784965" class="btn btn-yellow" style="margin-right:12px;"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+          <a href="tel:9153784965" class="btn"><i class="fas fa-phone-alt"></i> Call</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="margin-bottom:20px;">Book Free Demo Class</h3>
+        <form>
+          <div class="form-group"><input type="text" placeholder="Full Name" required></div>
+          <div class="form-group">
+            <select required>
+              <option>Class</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option><option>Competition</option>
+            </select>
+          </div>
+          <div class="form-group"><input type="tel" placeholder="Mobile Number" required></div>
+          <button type="submit" class="btn btn-yellow" style="border:none; width:100%;">Book Free Demo</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Map Section -->
+<section class="map-section">
+  <div class="container">
+    <h2 style="color:var(--deep-blue);">Our Location</h2>
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3666.325395635031!2d84.5832!3d23.6479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x398b3b7f1a3e7a7%3A0xb4e7a1b9f1b3e0!2sAjay%20Udyan%20Park%2C%20Gumla%20Rd%2C%20Lohardaga%2C%20Jharkhand!5e0!3m2!1sen!2sin!4v1712400123456" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="map-buttons">
+      <a href="https://maps.google.com/?q=Near+Ajay+Udyan+Park,+Gumla+Road,+Lohardaga+Jharkhand" class="btn btn-outline" target="_blank"><i class="fas fa-map-signs"></i> Get Directions</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">© 2025 EDUVA MENTOR Academy — Concept Clear • Result Sure <br> Near Ajay Udyan Park, Gumla Road, Lohardaga</div>
+</footer>
+
+</body>
+</html>
